@@ -9,23 +9,27 @@ const menuItems = [
 ];
 
 const Navbar = () => {
-  <nav className={styles.navbar}>
-    <div className={styles.logo}>
-      <Image
-        src="/f00ee5966c204ac58a3f256f435f2f92.png"
-        alt="site logo"
-        width={128}
-        height={77}
-      />
-    </div>
-    {menuItems.map((item, index) => {
-      return (
-        <Link href={item.path} key={index}>
-          <a className={styles.anchor}>{item.text}</a>
-        </Link>
-      );
-    })}
-  </nav>;
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <Image
+          src="/f00ee5966c204ac58a3f256f435f2f92.png"
+          alt="site logo"
+          width={170}
+          height={100}
+        />
+      </div>
+      <div className={styles.links}>
+        {menuItems.map((item, index) => {
+          return (
+            <Link href={item.path} key={index}>
+              <a className={styles.anchor}>{item.text}</a>
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

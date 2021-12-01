@@ -2,7 +2,8 @@
   display: block;
   text-align: center;
   padding: 30px 0;
-  margin-top: 60px;
+  bottom: 0;
   color: #777;
   border-top: 1px solid #eaeaea;
+  background-color: black;
 }
