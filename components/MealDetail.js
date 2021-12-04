@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "../styles/MealDetails.module.css";
+import classes from "../styles/MealDetail.module.css";
 
-const MealDetails = (props) => {
+const MealDetail = (props) => {
   return (
     <section className={classes.detail}>
       <img src={props.image} alt={props.title} />
@@ -12,4 +12,4 @@ const MealDetails = (props) => {
   );
 };
 
-export default MealDetails;
+export default MealDetail;
