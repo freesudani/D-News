@@ -1,5 +1,6 @@
 import React from "react";
 import SingleMeal from "./SingleMeal";
+import classes from "../styles/MenuList.module.css";
 
 const MenuList = (props) => {
   return (

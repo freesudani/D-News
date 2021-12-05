@@ -5,7 +5,7 @@ import styles from "../styles/Navbar.module.css";
 
 const menuItems = [
   { text: "About", path: "/" },
-  { text: "News", path: "/news" },
+  { text: "Add New Meal", path: "/new-meal" },
 ];
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Image
-          src="/f00ee5966c204ac58a3f256f435f2f92.png"
+          src="/d2672d31768e410b8d39134d631014d2.png"
           alt="site logo"
           width={170}
           height={100}
