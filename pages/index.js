@@ -3,9 +3,7 @@ import MenuList from "../components/MenuList";
 import Head from "next/head";
 import { MongoClient } from "mongodb";
 
-import classes from "../styles/Home.module.css";
-
-export default function Home(props) {
+const Home = (props) => {
   return (
     <>
       <Head>
@@ -15,12 +13,11 @@ export default function Home(props) {
           content="Discover most of the sudanese delicious foods"
         />
       </Head>
-      <div className={classes.main}>
-        <MenuList meals={props.meals} />
-      </div>
+
+      <MenuList meals={props.meals} />
     </>
   );
-}
+};
 
 export async function getStaticProps() {
   const client = await MongoClient.connect(
@@ -47,3 +44,5 @@ export async function getStaticProps() {
     revalidate: 1,
   };
 }
+
+export default Home;
