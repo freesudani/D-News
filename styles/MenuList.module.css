@@ -1,6 +1,22 @@
+.mymasonrygrid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.mymasonrygridcolumn {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.mymasonrygridcolumn > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
 .list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 50rem;
+  padding: 0.1rem 5rem;
 }
